@@ -7,20 +7,20 @@ pipeline {
         stage ("build") {
 
             steps {
-                echo "building the application..."
+                echo 'building the application...'
 
             }
 
-            stage ("dev") {
+            stage ("test") {
 
             steps {
-                echo "testing the application..."
+                echo 'testing the application...'
             }
 
-            stage ("main") {
+            stage ("deploy") {
 
             steps {
-                echo "Going LIVE..."
+                echo 'Going LIVE...'
             }
         }
     }
